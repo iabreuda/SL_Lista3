@@ -58,14 +58,14 @@
         \[Polos:  s^{2} + 4s + 4 = 0 \rightarrow s = -2\]
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[scale=0.7]{img/Q1a.png}
+			\includegraphics{img/Q1a.png}
 			\caption{P\'{o}los e Zeros - Item a}	
 		\end{figure}	        
 		\newpage
         \subsubsection{Item b}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[scale=0.7]{img/Q1b.png}
+			\includegraphics{img/Q1b.png}
 			\caption{P\'{o}los e Zeros - Item b}	
 		\end{figure}	   
 		
@@ -75,7 +75,7 @@
         \subsubsection{Item c}
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[scale=0.7]{img/Q1c.png}
+			\includegraphics{img/Q1c.png}
 			\caption{P\'{o}los e Zeros - Item c}	
 		\end{figure}	   
 		
@@ -88,7 +88,6 @@
         \subsubsection{Item b}
         Pela propriedade da derivação de Laplace, temos:
         \[s^3X{s} - s^2x(0^{-}) + sx^{'}(0^{-}) - x^{''}(0^{-})\]
-        \newpage
         \subsubsection{Item c}
         Pela propriedade da integração de Laplace, temos:
         \[\frac{X(s)}{s}\]
@@ -97,15 +96,88 @@
     \[\frac{1}{2(s-w_{0})} + \frac{1}{2(s+w_{0})} \rightarrow \frac{s}{s^{2} + \omega _{0}^{2} } \]
 \section{Resposta em Frequ\^{e}ncia}
     \subsection{Quest\~{a}o 4}
+	    \[H(j\omega)  = \frac{j\omega + 2}{-\omega ^{2} + 5j\omega + 4} \]
+	    \[|H(j\omega)| = \frac{\sqrt{2^{2} + {\omega ^{2}}}}{\sqrt{(4 -\omega ^{2})^{2} + (5\omega)^{2}}} \] \[\angle H(j\omega) = arctan \left(\frac{w}{2}\right) - arctan \left(\frac{5w}{4-\omega ^{2}}\right) \]
+	    \[y(t) = |H(j\omega)|cos(\omega t + \phi + \angle H(j\omega))\]
         \subsubsection{Item a}
+        \[y(t) = 5|H(j\omega)|cos(2t + 30^{o} + \angle H(j\omega))\]
+        \[|H(j\omega)| = \frac{\sqrt{4 + 4}}{\sqrt{(4 -4)^{2} + (10)^{2}}} \Rightarrow \frac{\sqrt{2}}{5} \]
+        \[\angle H(j\omega) = arctan \left(\frac{2}{2}\right) - arctan \left(\frac{10}{4-4}\right) \Rightarrow = -45^{o}\]
+        \[y(t) = \sqrt{2}cos(2t -15^{o})\]
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q4a.png}
+			\caption{$y(t) = \sqrt{2}cos(2t -15^{o})$}	
+		\end{figure}	         
         \subsubsection{Item b}
+        \[y(t) = 10|H(j\omega)|sen(2t + 45^{o} + \angle H(j\omega))\]
+        \[|H(j\omega)| = \frac{\sqrt{4 + 4}}{\sqrt{(4 -4)^{2} + (10)^{2}}} \Rightarrow \frac{\sqrt{2}}{5} \]
+        \[\angle H(j\omega) = arctan \left(\frac{2}{2}\right) - arctan \left(\frac{10}{4-4}\right) \Rightarrow = -45^{o}\]
+        \[y(t) = 2\sqrt{2}sen(2t)\]     
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q4b.png}
+			\caption{$y(t) = 2\sqrt{2}sen(2t)$}	
+		\end{figure}	           
         \subsubsection{Item c}
+        \[y(t) = 10|H(j\omega)|cos(4t + 40^{o} + \angle H(j\omega))\]
+        \[|H(j\omega)| = \frac{\sqrt{4 + 16}}{\sqrt{(4 -16)^{2} + (20)^{2}}} \Rightarrow 0.2 \]
+        \[\angle H(j\omega) = arctan \left(\frac{4}{2}\right) - arctan \left(\frac{20}{4-16}\right) \Rightarrow = -63.4^{o} - 59^{o} = -122.4^{o}\]
+        \[y(t) = 2cos(4t -82.4^{o})\]          
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q4c.png}
+			\caption{$y(t) = 2cos(4t -82.4^{o})$}	
+		\end{figure}	        
     \subsection{Quest\~{a}o 5}
+	    \[H(j\omega)  = \frac{10 - j\omega}{j\omega + 10} \]
+	    \[|H(j\omega)| = \frac{\sqrt{10^{2} + {(-\omega) ^{2}}}}{\sqrt{(\omega)^{2} + (10)^{2}}} \Rightarrow 1\] 
+	    \[\angle H(j\omega) = arctan \left(\frac{-w}{10}\right) - arctan \left(\frac{w}{10}\right) \]
+	    \[y(t) = |H(j\omega)|cos(\omega t + \phi + \angle H(j\omega))\]   
         \subsubsection{Item a}
+        \[y(t) = cos(wt + \theta + \angle H(j\omega))\]
+	    \[\angle H(j\omega) = arctan \left(\frac{-w}{10}\right) - arctan \left(\frac{w}{10}\right) \]
+	    \[y(t) = cos(\omega t + \theta + \angle H(j\omega))\]
+	    \newpage               
         \subsubsection{Item b}
+        \[y(t) = cos(2 + \theta + \angle H(j\omega))\]
+        \[\angle H(j\omega) = arctan \left(\frac{-1}{10}\right) - arctan \left(\frac{1}{10}\right) \Rightarrow -11.4^{o} \]
+        \[y(t) = cos(t -11.4^{o})\]    
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q5a.png}
+			\caption{$y(t) = cos(t -11.4^{o})$}	
+		\end{figure}	    
+		\newpage                 
         \subsubsection{Item c}
+        \[y(t) = cos(2t + \theta + \angle H(j\omega))\]
+        \[\angle H(j\omega) = arctan \left(\frac{-2}{10}\right) - arctan \left(\frac{2}{10}\right) \Rightarrow -22.6^{o} \]
+        \[y(t) = cos(2t -22.6^{o})\]   
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q5b.png}
+			\caption{$y(t) = cos(2t -22.6^{o})$}	
+		\end{figure}	   
+		\newpage                       
         \subsubsection{Item d}
+        \[y(t) = cos(10t + \theta + \angle H(j\omega))\]
+        \[\angle H(j\omega) = arctan \left(\frac{-10}{10}\right) - arctan \left(\frac{10}{10}\right) \Rightarrow -22.6^{o} \]
+        \[y(t) = cos(10t -90^{o})\]  
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q5c.png}
+			\caption{$y(t) = cos(10t -90^{o})$}	
+		\end{figure}	       
+		\newpage             
         \subsubsection{Item e}
+        \[y(t) = cos(100t + \theta + \angle H(j\omega))\]
+        \[\angle H(j\omega) = arctan \left(\frac{-100}{10}\right) - arctan \left(\frac{100}{10}\right) \Rightarrow -22.6^{o} \]
+        \[y(t) = cos(100t -168.5^{o})\]         
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q5d.png}
+			\caption{$y(t) = cos(100t -168.5^{o})$}	
+		\end{figure}	           
     \subsection{Quest\~{a}o 6}
         \subsubsection{Item a}
         É possível, uma vez que a resposta e um deslocamento de fase.
@@ -116,12 +188,63 @@
 \section{Diagrama de Bode}
     \subsection{Quest\~{a}o 7}
         \subsubsection{Item a}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q7a.png}
+			\caption{Diagrama de Bode - Item a}	
+		\end{figure}	       
+		\newpage 
         \subsubsection{Item b}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q7b.png}
+			\caption{Diagrama de Bode - Item b}	
+		\end{figure}       
+		\newpage
         \subsubsection{Item c}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q7c.png}
+			\caption{Diagrama de Bode - Item c}	
+		\end{figure}         
+		\newpage
         \subsubsection{Item d}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q7d.png}
+			\caption{Diagrama de Bode - Item d}	
+		\end{figure}          
+	\newpage   
     \subsection{Quest\~{a}o 8}
         \subsubsection{Item a}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q8a.png}
+			\caption{Diagrama de Bode - Item a}	
+		\end{figure}           
+		Nenhuma das figuras disponibilizadas.
+		\newpage
         \subsubsection{Item b}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q8b.png}
+			\caption{Diagrama de Bode - Item b}	
+		\end{figure}           
+		Resposta: \textbf{Figura 2}
+		\newpage
         \subsubsection{Item c}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q8c.png}
+			\caption{Diagrama de Bode - Item c}	
+		\end{figure}           
+		Resposta: \textbf{Figura 1} 
+		\newpage         
         \subsubsection{Item d}
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics{img/Q8d.png}
+			\caption{Diagrama de Bode - Item d}	
+		\end{figure}           
+		Resposta: \textbf{Figura 3}        
 \end{document}
